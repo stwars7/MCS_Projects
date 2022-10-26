@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    color: black;
+}
+
+a:link,
+a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(70, 20, 20);
+}
+
+.menu-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: black;
+    position: fixed;
+    color: whitesmoke;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu>li {
+    margin-right: 50px;
+    display: inline;
+}
+
+.menu>li:last-of-type {
+    margin-right: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-image: url(Hero-1.jpg);
+    background-size: cover;
+}
+
+.header {
+    height: 1200px;
+    display: flex;
+    font-size: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.block-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.block-1,
+.block-2 {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 1040px;
+    height: 250px;
+    border: 3px solid #1d1517;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    line-height: 29px;
+}
+
+.block-2 {
+    display: flex;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.column-container div {
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    color: whitesmoke;
+    background-color: black;
+}
