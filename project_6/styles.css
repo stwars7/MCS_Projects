@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(Background.JPG);
+    background-size: contain;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: rgb(231, 210, 184);
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.column-container {
+    display: flex;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4 {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 330px;
+    height: 165px;
+    margin: 15px;
+    background-color: rgb(229, 221, 212);
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    text-indent: 20px;
+}
+
+h2,
+p {
+    margin: 5px;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(231, 210, 184);
+    background-color: black;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Макет для мобильных */
+@media only screen and (max-width: 400px) {
+    .column-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Макет для десктопов */
+@media only screen and (min-width:961px) {
+    .column-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4 {
+        width: 600px;
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 32px;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2,
+    p {
+        margin: 10px;
+    }
+}
+
+/* Макет для планшетов */
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
